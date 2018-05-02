@@ -1,0 +1,11 @@
+{% extends "layout.html" %} {% block content %}
+<div class="main jumbotron">
+    <h1 class="display-4">Search for song genres.</h1>
+    <form action="/searchGenius" method="POST">
+        <div class="center form-group">
+            <input type="text" class="form-control" id="searchBar" name="searchBar" aria-describedby="emailHelp" placeholder="Enter Song Name">
+        </div>
+        <button type="submit" class="center btn-lg btn-primary" id="submitSearch">Search!</button>
+    </form>
+</div>
+{% endblock %}

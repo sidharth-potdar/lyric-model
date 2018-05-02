@@ -1,0 +1,12 @@
+{% extends "layout.html" %} {% block content %}
+<div class="main jumbotron text-center">
+    {% if song_name and genre %}
+    <p class="text-lg">We're pretty sure that <i>'{{song_name}}'</i> is <span class="genre">{{genre}}</span>!</p>
+    <small class="text-muted text-sm">We could be wrong though..</small>
+    <p style="padding-top: .5em"><a href="/">Search again</a></p>
+    {% else %}
+    <p class="text-lg">We couldn't find that song! :(</p>
+    <p style="padding-top: .5em"><a href="/">Search again</a></p>
+    {% endif %}
+</div>
+{% endblock %}
